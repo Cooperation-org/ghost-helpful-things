@@ -1,0 +1,26 @@
+{{!-- 
+    Social Share Component for Ghost
+    Adds Bluesky and Mastodon sharing
+    
+    Usage: Include this partial after your existing share buttons
+    {{> "social-share"}}
+--}}
+
+<a href="https://bsky.app/intent/compose?text={{encode title}}%20{{url absolute='true'}}" 
+   target="_blank" 
+   rel="noopener" 
+   class="social" 
+   aria-label="Share on Bluesky">
+    <div class="social-inner">
+        {{> "icons/bluesky-icon"}}
+    </div>
+</a>
+
+<a href="javascript:void(0);" 
+   onclick="shareMastodon('{{encode title}}', '{{url absolute=true}}')" 
+   class="social" 
+   aria-label="Share on Mastodon">
+    <div class="social-inner">
+        {{> "icons/mastodon-icon"}}
+    </div>
+</a>

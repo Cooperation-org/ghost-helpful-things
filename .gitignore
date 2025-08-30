@@ -1,0 +1,11 @@
+node_modules/
+*.log
+.DS_Store
+config.*.json
+content/data/*
+content/logs/*
+content/adapters/
+content/apps/
+!content/data/redirects.json
+!content/data/routes.yaml
+.ghost-cli
